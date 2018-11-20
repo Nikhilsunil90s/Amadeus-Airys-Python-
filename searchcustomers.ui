@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SearchCustWindow</class>
+ <widget class="QMainWindow" name="SearchCustWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>603</width>
+    <height>343</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>691</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <row>
+     <property name="text">
+      <string>Customer1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Customer2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Customer3</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Customer Name</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust. Travel ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust. Father's Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Customer DOB</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust. Tel. Number</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Customer Address</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>20</y>
+      <width>251</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>All Clients Here!</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>603</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCustomers">
+    <property name="title">
+     <string>Customers</string>
+    </property>
+    <addaction name="actionAdd_New_Customer"/>
+    <addaction name="actionUpdate_An_Existing_Customer"/>
+    <addaction name="actionDelete_A_Customer"/>
+    <addaction name="actionGo_Back_To_Main_Window"/>
+   </widget>
+   <addaction name="menuCustomers"/>
+  </widget>
+  <action name="actionAdd_New_Customer">
+   <property name="text">
+    <string>Add New Customer</string>
+   </property>
+  </action>
+  <action name="actionUpdate_An_Existing_Customer">
+   <property name="text">
+    <string>Update An Existing Customer</string>
+   </property>
+  </action>
+  <action name="actionDelete_A_Customer">
+   <property name="text">
+    <string>Delete A Customer</string>
+   </property>
+  </action>
+  <action name="actionGo_Back_To_Main_Window">
+   <property name="text">
+    <string>Go Back To Main Window</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
